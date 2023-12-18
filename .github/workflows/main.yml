@@ -22,7 +22,7 @@ jobs:
           cache-dependency-path: yarn.lock
 
       - name: Install deps
-        uses: yarn
+        run: yarn
       
       - name: Build
         run: yarn build
