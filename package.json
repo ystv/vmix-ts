@@ -16,8 +16,7 @@
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
+    "publish": "np"
   },
   "peerDependencies": {},
   "husky": {
@@ -47,15 +46,16 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.0.1",
     "@types/node": "^20.10.5",
+    "@types/qs": "^6.9.10",
+    "@types/uuid": "^9.0.7",
     "husky": "^8.0.3",
+    "np": "^9.2.0",
     "size-limit": "^11.0.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@types/qs": "^6.9.10",
-    "@types/uuid": "^9.0.7",
     "fast-xml-parser": "^4.3.2",
     "qs": "^6.11.2",
     "uuid": "^9.0.1",
@@ -65,5 +65,9 @@
     "**/typescript": "^5.3.3",
     "**/jest": "^29.7.0",
     "**/ts-jest": "^29.1.1"
+  },
+  "np": {
+    "yarn": true,
+    "contents": "dist"
   }
 }
